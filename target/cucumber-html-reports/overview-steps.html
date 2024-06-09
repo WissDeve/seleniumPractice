@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>cucumber-jvm-example</td>
+              <td>1</td>
+            <td>28 Sep 2023, 11:32</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">gpte.com.RequestRefundSteps.i_am_logged_in_as_a_gestnf_user() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="5905551400">5.905</td>
+              <td class="duration" data-value="5905551400">5.905</td>
+              <td class="duration" data-value="5905551400">5.905</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">gpte.com.RequestRefundSteps.i_am_logged_in_as_a_responsible_manager() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="6915566600">6.915</td>
+              <td class="duration" data-value="6915566600">6.915</td>
+              <td class="duration" data-value="6915566600">6.915</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">gpte.com.RequestRefundSteps.i_am_logged_in_as_a_user() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="4571459900">4.571</td>
+              <td class="duration" data-value="4571459900">4.571</td>
+              <td class="duration" data-value="4571459900">4.571</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">gpte.com.RequestRefundSteps.i_check_the_request_status() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="44467000">0.044</td>
+              <td class="duration" data-value="44467000">0.044</td>
+              <td class="duration" data-value="44467000">0.044</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">gpte.com.RequestRefundSteps.i_navigate_to_the_refund_request_page() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="10088954900">10.088</td>
+              <td class="duration" data-value="10088954900">10.088</td>
+              <td class="duration" data-value="10088954900">10.088</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">gpte.com.RequestRefundSteps.i_should_see_a_success_message_indicating_the_request_was_sent_successfully() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="13568769500">13.568</td>
+              <td class="duration" data-value="13568769500">13.568</td>
+              <td class="duration" data-value="13568769500">13.568</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">gpte.com.RequestRefundSteps.i_submit_the_refund_request_form() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="164866900">0.164</td>
+              <td class="duration" data-value="164866900">0.164</td>
+              <td class="duration" data-value="164866900">0.164</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">gpte.com.RequestRefundSteps.i_validate_the_request_as_a_gestnf_user() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="445851500">0.445</td>
+              <td class="duration" data-value="445851500">0.445</td>
+              <td class="duration" data-value="445851500">0.445</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">gpte.com.RequestRefundSteps.i_validate_the_request_as_a_responsible_manager() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="695995700">0.695</td>
+              <td class="duration" data-value="695995700">0.695</td>
+              <td class="duration" data-value="695995700">0.695</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">gpte.com.RequestRefundSteps.setup() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/</td>
+              <td>4</td>
+              <td class="duration" data-value="1585179925">1.585</td>
+              <td class="duration" data-value="1585179925">1.700</td>
+              <td class="duration" data-value="6340719700">6.340</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">gpte.com.RequestRefundSteps.teardown() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/</td>
+              <td>4</td>
+              <td class="duration" data-value="296720100">0.296</td>
+              <td class="duration" data-value="296720100">0.309</td>
+              <td class="duration" data-value="1186880400">1.186</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">gpte.com.RequestRefundSteps.the_request_status_should_be_marked_as_APPROVED() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="1074900">0.001</td>
+              <td class="duration" data-value="1074900">0.001</td>
+              <td class="duration" data-value="1074900">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">gpte.com.RequestRefundSteps.the_request_status_should_be_validated_for_gestnf_user() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="13312292000">13.312</td>
+              <td class="duration" data-value="13312292000">13.312</td>
+              <td class="duration" data-value="13312292000">13.312</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">gpte.com.RequestRefundSteps.the_request_status_should_be_validated_for_responsible_manager() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="10035691900">10.035</td>
+              <td class="duration" data-value="10035691900">10.035</td>
+              <td class="duration" data-value="10035691900">10.035</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">gpte.com.RequestRefundSteps.there_is_a_pending_expense_reimbursement_request_for_gestnf_user() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="8637292600">8.637</td>
+              <td class="duration" data-value="8637292600">8.637</td>
+              <td class="duration" data-value="8637292600">8.637</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">gpte.com.RequestRefundSteps.there_is_a_pending_expense_reimbursement_request_for_responsible_manager() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="13737141200">13.737</td>
+              <td class="duration" data-value="13737141200">13.737</td>
+              <td class="duration" data-value="13737141200">13.737</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">gpte.com.RequestRefundSteps.there_is_an_approved_expense_reimbursement_request() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="7009347900">7.009</td>
+              <td class="duration" data-value="7009347900">7.009</td>
+              <td class="duration" data-value="7009347900">7.009</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">gpte.com.ResquestMissionMarocSteps.setup() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/</td>
+              <td>4</td>
+              <td class="duration" data-value="1051476175">1.051</td>
+              <td class="duration" data-value="1051476175">1.198</td>
+              <td class="duration" data-value="4205904700">4.205</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>18</td>
+            <td>27</td>
+            <td class="duration">3.958</td>
+            <td class="duration">13.737</td>
+            <td class="duration">1:46.867</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

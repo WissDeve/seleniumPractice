@@ -1,0 +1,361 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-09-28T10:30:48.341Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1700790500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.setup() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            }
+          },
+          {
+            "result": {
+              "duration": 929473500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gpte.com.ResquestMissionMarocSteps.setup() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Sending a Mission Refund Request",
+        "description": "",
+        "id": "expense-reimbursement-request;sending-a-mission-refund-request",
+        "after": [
+          {
+            "result": {
+              "duration": 292275600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.teardown() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4571459900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am logged in as a user",
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.i_am_logged_in_as_a_user() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10088954900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to the refund request page",
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.i_navigate_to_the_refund_request_page() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 164866900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I submit the refund request form",
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.i_submit_the_refund_request_form() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13568769500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should see a success message indicating the request was sent successfully",
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.i_should_see_a_success_message_indicating_the_request_was_sent_successfully() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-09-28T10:31:19.672Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1526407300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.setup() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            }
+          },
+          {
+            "result": {
+              "duration": 1052048600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gpte.com.ResquestMissionMarocSteps.setup() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Request and Validate Expense Reimbursement Request as a GESTNF User",
+        "description": "",
+        "id": "expense-reimbursement-request;request-and-validate-expense-reimbursement-request-as-a-gestnf-user",
+        "after": [
+          {
+            "result": {
+              "duration": 309788200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.teardown() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5905551400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am logged in as a GESTNF user",
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.i_am_logged_in_as_a_gestnf_user() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8637292600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "there is a pending expense reimbursement request for GESTNF user",
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.there_is_a_pending_expense_reimbursement_request_for_gestnf_user() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 445851500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I validate the request as a GESTNF user",
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.i_validate_the_request_as_a_gestnf_user() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13312292000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the request status should be validated for GESTNF user",
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.the_request_status_should_be_validated_for_gestnf_user() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-09-28T10:31:50.863Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1494001400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.setup() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            }
+          },
+          {
+            "result": {
+              "duration": 1025650800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gpte.com.ResquestMissionMarocSteps.setup() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Request and Validate Expense Reimbursement Request as a Responsible Manager",
+        "description": "",
+        "id": "expense-reimbursement-request;request-and-validate-expense-reimbursement-request-as-a-responsible-manager",
+        "after": [
+          {
+            "result": {
+              "duration": 282020800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.teardown() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6915566600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am logged in as a responsible manager",
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.i_am_logged_in_as_a_responsible_manager() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13737141200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "there is a pending expense reimbursement request for responsible manager",
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.there_is_a_pending_expense_reimbursement_request_for_responsible_manager() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 695995700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I validate the request as a responsible manager",
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.i_validate_the_request_as_a_responsible_manager() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10035691900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the request status should be validated for responsible manager",
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.the_request_status_should_be_validated_for_responsible_manager() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-09-28T10:32:25.055Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1619520500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.setup() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            }
+          },
+          {
+            "result": {
+              "duration": 1198731800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gpte.com.ResquestMissionMarocSteps.setup() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Check Approved Expense Reimbursement Request",
+        "description": "",
+        "id": "expense-reimbursement-request;check-approved-expense-reimbursement-request",
+        "after": [
+          {
+            "result": {
+              "duration": 302795800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.teardown() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7009347900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "there is an approved expense reimbursement request",
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.there_is_an_approved_expense_reimbursement_request() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 44467000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I check the request status",
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.i_check_the_request_status() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1074900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the request status should be marked as APPROVED",
+            "match": {
+              "location": "gpte.com.RequestRefundSteps.the_request_status_should_be_marked_as_APPROVED() in file:/C:/Users/wmahmoudi/eclipse-workspace/gpte.com/target/test-classes/"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Expense Reimbursement Request",
+    "description": "",
+    "id": "expense-reimbursement-request",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/RequestExpenseReimbursement.feature",
+    "tags": []
+  }
+]
